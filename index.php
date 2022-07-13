@@ -19,16 +19,23 @@ require_once("config.php");
 // $ususario->login("josiane", "456789");
 // echo $ususario;
 
-// -- Criando um novo usua´rio -- //
-// $aluno = new Usuario("aluno", "@alun0");
+/*
+-- Criando um novo usua´rio --
+ $aluno = new Usuario("aluno", "@alun0");
+ $aluno->insert();
+ echo $aluno;
 
-// $aluno->insert();
-// echo $aluno;
-
-// -- Alterar ususario -- //
-$usuario = new Usuario();
+ -- Alterar ususario -- 
+ $usuario = new Usuario();
 $usuario->loadById(7);
 $usuario->update("professor", "!@#$!@#$");
-echo $usuario;
+echo $usuario; 
+
+-- Deletar ususario -- 
+$usuario = new Usuario();
+$usuario->loadById(8);
+$usuario->delete();
+echo($usuario);
+*/
 
 ?>
